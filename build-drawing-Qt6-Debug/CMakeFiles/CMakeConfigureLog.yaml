@@ -1,0 +1,365 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.27/Modules/CMakeDetermineSystem.cmake:211 (message)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      The system is: Linux - 6.8.4-arch1-1 - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.27/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/g++ 
+      Build flags: -DQT_QML_DEBUG
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/hallex/Документы/DrawinG/build-drawing-Qt6-Debug/CMakeFiles/3.27.6/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/hallex/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/DrawinG/build-drawing-Qt6-Debug/CMakeFiles/CMakeScratch/TryCompile-UCBEGn"
+      binary: "/home/hallex/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/DrawinG/build-drawing-Qt6-Debug/CMakeFiles/CMakeScratch/TryCompile-UCBEGn"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-DQT_QML_DEBUG"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/hallex/Документы/DrawinG/build-drawing-Qt6-Debug/CMakeFiles/CMakeScratch/TryCompile-UCBEGn'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_2cc83
+        [1/2] /usr/bin/g++   -DQT_QML_DEBUG    -v -o CMakeFiles/cmTC_2cc83.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/g++
+        Target: x86_64-unknown-linux-gnu
+        Configured with: ../configure --prefix=/usr --exec-prefix=/usr --bindir=/usr/bin --sbindir=/usr/bin --sysconfdir=/etc --datadir=/usr/share --includedir=/usr/include --libdir=/usr/lib --libexecdir=/usr/libexec --localstatedir=/var --sharedstatedir=/usr/com --mandir=/usr/share/man --infodir=/usr/share/info --enable-deterministic-archives --enable-shared --build=x86_64-unknown-linux-gnu --host=x86_64-unknown-linux-gnu lt_cv_sys_lib_dlsearch_path_spec=/usr/lib/x86_64-linux-gnu --target=x86_64-unknown-linux-gnu --disable-multilib --enable-multiarch --disable-bootstrap --with-build-sysroot=/cross-installation --enable-languages=c,c++,fortran,objc,obj-c++ --enable-default-pie --enable-default-ssp --with-isl --disable-libssp --enable-linker-build-id --disable-libstdcxx-filesystem-ts --enable-cet host_configargs=lt_cv_sys_lib_dlsearch_path_spec=/usr/lib/x86_64-linux-gnu target_configargs=lt_cv_sys_lib_dlsearch_path_spec=/usr/lib/x86_64-linux-gnu
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 11.3.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-D' 'QT_QML_DEBUG' '-v' '-o' 'CMakeFiles/cmTC_2cc83.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2cc83.dir/'
+         /usr/libexec/gcc/x86_64-unknown-linux-gnu/11.3.0/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE -D QT_QML_DEBUG /usr/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_2cc83.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/cc7ISibq.s
+        GNU C++17 (GCC) version 11.3.0 (x86_64-unknown-linux-gnu)
+        	compiled by GNU C version 11.3.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/local/include"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../../../x86_64-unknown-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../../../include/c++/11.3.0
+         /usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../../../include/c++/11.3.0/x86_64-unknown-linux-gnu
+         /usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../../../include/c++/11.3.0/backward
+         /usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/include
+         /usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/include-fixed
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        GNU C++17 (GCC) version 11.3.0 (x86_64-unknown-linux-gnu)
+        	compiled by GNU C version 11.3.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: d965f165988ef79994c37a5bd62e44d5
+        COLLECT_GCC_OPTIONS='-D' 'QT_QML_DEBUG' '-v' '-o' 'CMakeFiles/cmTC_2cc83.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2cc83.dir/'
+         /usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../../../x86_64-unknown-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_2cc83.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc7ISibq.s
+        GNU assembler version 2.37 (x86_64-unknown-linux-gnu) using BFD version (GNU Binutils) 2.37
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-unknown-linux-gnu/11.3.0/:/usr/libexec/gcc/x86_64-unknown-linux-gnu/11.3.0/:/usr/libexec/gcc/x86_64-unknown-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../../../x86_64-unknown-linux-gnu/bin/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../../../x86_64-unknown-linux-gnu/lib/:/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-D' 'QT_QML_DEBUG' '-v' '-o' 'CMakeFiles/cmTC_2cc83.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2cc83.dir/CMakeCXXCompilerABI.cpp.'
+        [2/2] : && /usr/bin/g++ -DQT_QML_DEBUG -v CMakeFiles/cmTC_2cc83.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_2cc83   && :
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/g++
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-unknown-linux-gnu/11.3.0/lto-wrapper
+        Target: x86_64-unknown-linux-gnu
+        Configured with: ../configure --prefix=/usr --exec-prefix=/usr --bindir=/usr/bin --sbindir=/usr/bin --sysconfdir=/etc --datadir=/usr/share --includedir=/usr/include --libdir=/usr/lib --libexecdir=/usr/libexec --localstatedir=/var --sharedstatedir=/usr/com --mandir=/usr/share/man --infodir=/usr/share/info --enable-deterministic-archives --enable-shared --build=x86_64-unknown-linux-gnu --host=x86_64-unknown-linux-gnu lt_cv_sys_lib_dlsearch_path_spec=/usr/lib/x86_64-linux-gnu --target=x86_64-unknown-linux-gnu --disable-multilib --enable-multiarch --disable-bootstrap --with-build-sysroot=/cross-installation --enable-languages=c,c++,fortran,objc,obj-c++ --enable-default-pie --enable-default-ssp --with-isl --disable-libssp --enable-linker-build-id --disable-libstdcxx-filesystem-ts --enable-cet host_configargs=lt_cv_sys_lib_dlsearch_path_spec=/usr/lib/x86_64-linux-gnu target_configargs=lt_cv_sys_lib_dlsearch_path_spec=/usr/lib/x86_64-linux-gnu
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 11.3.0 (GCC) 
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-unknown-linux-gnu/11.3.0/:/usr/libexec/gcc/x86_64-unknown-linux-gnu/11.3.0/:/usr/libexec/gcc/x86_64-unknown-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../../../x86_64-unknown-linux-gnu/bin/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../../../x86_64-unknown-linux-gnu/lib/:/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-D' 'QT_QML_DEBUG' '-v' '-o' 'cmTC_2cc83' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_2cc83.'
+         /usr/libexec/gcc/x86_64-unknown-linux-gnu/11.3.0/collect2 -plugin /usr/libexec/gcc/x86_64-unknown-linux-gnu/11.3.0/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-unknown-linux-gnu/11.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc1Nxsrp.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_2cc83 /usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/crtbeginS.o -L/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../../../x86_64-unknown-linux-gnu/lib -L/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../.. CMakeFiles/cmTC_2cc83.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/crtendS.o /usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-D' 'QT_QML_DEBUG' '-v' '-o' 'cmTC_2cc83' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_2cc83.'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../../../include/c++/11.3.0]
+          add: [/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../../../include/c++/11.3.0/x86_64-unknown-linux-gnu]
+          add: [/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../../../include/c++/11.3.0/backward]
+          add: [/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/include]
+          add: [/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/include-fixed]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../../../include/c++/11.3.0] ==> [/usr/include/c++/11.3.0]
+        collapse include dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../../../include/c++/11.3.0/x86_64-unknown-linux-gnu] ==> [/usr/include/c++/11.3.0/x86_64-unknown-linux-gnu]
+        collapse include dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../../../include/c++/11.3.0/backward] ==> [/usr/include/c++/11.3.0/backward]
+        collapse include dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/include] ==> [/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/include]
+        collapse include dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/include-fixed] ==> [/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/include-fixed]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/include/c++/11.3.0;/usr/include/c++/11.3.0/x86_64-unknown-linux-gnu;/usr/include/c++/11.3.0/backward;/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/include;/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/include-fixed;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/usr/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/hallex/Документы/DrawinG/build-drawing-Qt6-Debug/CMakeFiles/CMakeScratch/TryCompile-UCBEGn']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/ninja -v cmTC_2cc83]
+        ignore line: [[1/2] /usr/bin/g++   -DQT_QML_DEBUG    -v -o CMakeFiles/cmTC_2cc83.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/g++]
+        ignore line: [Target: x86_64-unknown-linux-gnu]
+        ignore line: [Configured with: ../configure --prefix=/usr --exec-prefix=/usr --bindir=/usr/bin --sbindir=/usr/bin --sysconfdir=/etc --datadir=/usr/share --includedir=/usr/include --libdir=/usr/lib --libexecdir=/usr/libexec --localstatedir=/var --sharedstatedir=/usr/com --mandir=/usr/share/man --infodir=/usr/share/info --enable-deterministic-archives --enable-shared --build=x86_64-unknown-linux-gnu --host=x86_64-unknown-linux-gnu lt_cv_sys_lib_dlsearch_path_spec=/usr/lib/x86_64-linux-gnu --target=x86_64-unknown-linux-gnu --disable-multilib --enable-multiarch --disable-bootstrap --with-build-sysroot=/cross-installation --enable-languages=c c++ fortran objc obj-c++ --enable-default-pie --enable-default-ssp --with-isl --disable-libssp --enable-linker-build-id --disable-libstdcxx-filesystem-ts --enable-cet host_configargs=lt_cv_sys_lib_dlsearch_path_spec=/usr/lib/x86_64-linux-gnu target_configargs=lt_cv_sys_lib_dlsearch_path_spec=/usr/lib/x86_64-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 11.3.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' 'QT_QML_DEBUG' '-v' '-o' 'CMakeFiles/cmTC_2cc83.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2cc83.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-unknown-linux-gnu/11.3.0/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE -D QT_QML_DEBUG /usr/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_2cc83.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/cc7ISibq.s]
+        ignore line: [GNU C++17 (GCC) version 11.3.0 (x86_64-unknown-linux-gnu)]
+        ignore line: [	compiled by GNU C version 11.3.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/local/include"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../../../x86_64-unknown-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../../../include/c++/11.3.0]
+        ignore line: [ /usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../../../include/c++/11.3.0/x86_64-unknown-linux-gnu]
+        ignore line: [ /usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../../../include/c++/11.3.0/backward]
+        ignore line: [ /usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/include]
+        ignore line: [ /usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/include-fixed]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C++17 (GCC) version 11.3.0 (x86_64-unknown-linux-gnu)]
+        ignore line: [	compiled by GNU C version 11.3.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: d965f165988ef79994c37a5bd62e44d5]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' 'QT_QML_DEBUG' '-v' '-o' 'CMakeFiles/cmTC_2cc83.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2cc83.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../../../x86_64-unknown-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_2cc83.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc7ISibq.s]
+        ignore line: [GNU assembler version 2.37 (x86_64-unknown-linux-gnu) using BFD version (GNU Binutils) 2.37]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-unknown-linux-gnu/11.3.0/:/usr/libexec/gcc/x86_64-unknown-linux-gnu/11.3.0/:/usr/libexec/gcc/x86_64-unknown-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../../../x86_64-unknown-linux-gnu/bin/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../../../x86_64-unknown-linux-gnu/lib/:/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' 'QT_QML_DEBUG' '-v' '-o' 'CMakeFiles/cmTC_2cc83.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2cc83.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [[2/2] : && /usr/bin/g++ -DQT_QML_DEBUG -v CMakeFiles/cmTC_2cc83.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_2cc83   && :]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/g++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-unknown-linux-gnu/11.3.0/lto-wrapper]
+        ignore line: [Target: x86_64-unknown-linux-gnu]
+        ignore line: [Configured with: ../configure --prefix=/usr --exec-prefix=/usr --bindir=/usr/bin --sbindir=/usr/bin --sysconfdir=/etc --datadir=/usr/share --includedir=/usr/include --libdir=/usr/lib --libexecdir=/usr/libexec --localstatedir=/var --sharedstatedir=/usr/com --mandir=/usr/share/man --infodir=/usr/share/info --enable-deterministic-archives --enable-shared --build=x86_64-unknown-linux-gnu --host=x86_64-unknown-linux-gnu lt_cv_sys_lib_dlsearch_path_spec=/usr/lib/x86_64-linux-gnu --target=x86_64-unknown-linux-gnu --disable-multilib --enable-multiarch --disable-bootstrap --with-build-sysroot=/cross-installation --enable-languages=c c++ fortran objc obj-c++ --enable-default-pie --enable-default-ssp --with-isl --disable-libssp --enable-linker-build-id --disable-libstdcxx-filesystem-ts --enable-cet host_configargs=lt_cv_sys_lib_dlsearch_path_spec=/usr/lib/x86_64-linux-gnu target_configargs=lt_cv_sys_lib_dlsearch_path_spec=/usr/lib/x86_64-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 11.3.0 (GCC) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-unknown-linux-gnu/11.3.0/:/usr/libexec/gcc/x86_64-unknown-linux-gnu/11.3.0/:/usr/libexec/gcc/x86_64-unknown-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../../../x86_64-unknown-linux-gnu/bin/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../../../x86_64-unknown-linux-gnu/lib/:/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' 'QT_QML_DEBUG' '-v' '-o' 'cmTC_2cc83' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_2cc83.']
+        link line: [ /usr/libexec/gcc/x86_64-unknown-linux-gnu/11.3.0/collect2 -plugin /usr/libexec/gcc/x86_64-unknown-linux-gnu/11.3.0/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-unknown-linux-gnu/11.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc1Nxsrp.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_2cc83 /usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/crtbeginS.o -L/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../../../x86_64-unknown-linux-gnu/lib -L/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../.. CMakeFiles/cmTC_2cc83.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/crtendS.o /usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../../x86_64-linux-gnu/crtn.o]
+          arg [/usr/libexec/gcc/x86_64-unknown-linux-gnu/11.3.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/x86_64-unknown-linux-gnu/11.3.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/x86_64-unknown-linux-gnu/11.3.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cc1Nxsrp.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_2cc83] ==> ignore
+          arg [/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../../x86_64-linux-gnu/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../../x86_64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0] ==> dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0]
+          arg [-L/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../../x86_64-linux-gnu]
+          arg [-L/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../../../lib64]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../../../x86_64-unknown-linux-gnu/lib] ==> dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../../../x86_64-unknown-linux-gnu/lib]
+          arg [-L/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../..] ==> dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../..]
+          arg [CMakeFiles/cmTC_2cc83.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../../x86_64-linux-gnu/crtn.o]
+        collapse obj [/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0] ==> [/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0]
+        collapse library dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../../../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../../../x86_64-unknown-linux-gnu/lib] ==> [/usr/x86_64-unknown-linux-gnu/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../..] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/crtbeginS.o;/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0;/usr/lib/x86_64-linux-gnu;/usr/lib64;/lib/x86_64-linux-gnu;/lib64;/usr/x86_64-unknown-linux-gnu/lib;/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.27/Modules/CheckCXXSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.27/Modules/FindThreads.cmake:99 (CHECK_CXX_SOURCE_COMPILES)"
+      - "/usr/share/cmake-3.27/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "/usr/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/app/lib/cmake/Qt6/Qt6Dependencies.cmake:48 (find_dependency)"
+      - "/app/lib/cmake/Qt6/Qt6Config.cmake:175 (include)"
+      - "CMakeLists.txt:14 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/home/hallex/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/DrawinG/build-drawing-Qt6-Debug/CMakeFiles/CMakeScratch/TryCompile-T2Vt6i"
+      binary: "/home/hallex/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/DrawinG/build-drawing-Qt6-Debug/CMakeFiles/CMakeScratch/TryCompile-T2Vt6i"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-DQT_QML_DEBUG"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/app/lib/cmake/Qt6;/app/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/app/lib/cmake/Qt6/3rdparty/kwin"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/home/hallex/Документы/DrawinG/build-drawing-Qt6-Debug/CMakeFiles/CMakeScratch/TryCompile-T2Vt6i'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_499c6
+        [1/2] /usr/bin/g++ -DCMAKE_HAVE_LIBC_PTHREAD  -DQT_QML_DEBUG  -std=gnu++17 -o CMakeFiles/cmTC_499c6.dir/src.cxx.o -c '/home/hallex/Документы/DrawinG/build-drawing-Qt6-Debug/CMakeFiles/CMakeScratch/TryCompile-T2Vt6i/src.cxx'
+        [2/2] : && /usr/bin/g++ -DQT_QML_DEBUG  CMakeFiles/cmTC_499c6.dir/src.cxx.o -o cmTC_499c6   && :
+        FAILED: cmTC_499c6 
+        : && /usr/bin/g++ -DQT_QML_DEBUG  CMakeFiles/cmTC_499c6.dir/src.cxx.o -o cmTC_499c6   && :
+        /usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../../../x86_64-unknown-linux-gnu/bin/ld: CMakeFiles/cmTC_499c6.dir/src.cxx.o: в функции «main»:
+        src.cxx:(.text+0x3e): неопределённая ссылка на «pthread_create»
+        /usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../../../x86_64-unknown-linux-gnu/bin/ld: src.cxx:(.text+0x4a): неопределённая ссылка на «pthread_detach»
+        /usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../../../x86_64-unknown-linux-gnu/bin/ld: src.cxx:(.text+0x56): неопределённая ссылка на «pthread_cancel»
+        /usr/lib/gcc/x86_64-unknown-linux-gnu/11.3.0/../../../../x86_64-unknown-linux-gnu/bin/ld: src.cxx:(.text+0x67): неопределённая ссылка на «pthread_join»
+        collect2: ошибка: выполнение ld завершилось с кодом возврата 1
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.27/Modules/FindThreads.cmake:136 (try_compile)"
+      - "/usr/share/cmake-3.27/Modules/FindThreads.cmake:169 (_threads_check_flag_pthread)"
+      - "/usr/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/app/lib/cmake/Qt6/Qt6Dependencies.cmake:48 (find_dependency)"
+      - "/app/lib/cmake/Qt6/Qt6Config.cmake:175 (include)"
+      - "CMakeLists.txt:14 (find_package)"
+    checks:
+      - "Check if compiler accepts -pthread"
+    directories:
+      source: "/home/hallex/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/DrawinG/build-drawing-Qt6-Debug/CMakeFiles/CMakeScratch/TryCompile-gBo9eq"
+      binary: "/home/hallex/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/DrawinG/build-drawing-Qt6-Debug/CMakeFiles/CMakeScratch/TryCompile-gBo9eq"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-DQT_QML_DEBUG"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/app/lib/cmake/Qt6;/app/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/app/lib/cmake/Qt6/3rdparty/kwin"
+    buildResult:
+      variable: "THREADS_HAVE_PTHREAD_ARG"
+      cached: true
+      stdout: |
+        Change Dir: '/home/hallex/Документы/DrawinG/build-drawing-Qt6-Debug/CMakeFiles/CMakeScratch/TryCompile-gBo9eq'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_16647
+        [1/2] /usr/bin/g++   -DQT_QML_DEBUG  -std=gnu++17 -o CMakeFiles/cmTC_16647.dir/CheckForPthreads.cxx.o -c '/home/hallex/Документы/DrawinG/build-drawing-Qt6-Debug/CMakeFiles/CMakeScratch/TryCompile-gBo9eq/CheckForPthreads.cxx'
+        [2/2] : && /usr/bin/g++ -DQT_QML_DEBUG  CMakeFiles/cmTC_16647.dir/CheckForPthreads.cxx.o -o cmTC_16647  -pthread && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.27/Modules/CheckCXXSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/app/lib/cmake/Qt6/FindWrapAtomic.cmake:33 (check_cxx_source_compiles)"
+      - "/usr/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/app/lib/cmake/Qt6Core/Qt6CoreDependencies.cmake:48 (find_dependency)"
+      - "/app/lib/cmake/Qt6Core/Qt6CoreConfig.cmake:40 (include)"
+      - "/usr/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/app/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:14 (find_dependency)"
+      - "/app/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake:96 (_qt_internal_find_dependencies)"
+      - "/app/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake:40 (include)"
+      - "/app/lib/cmake/Qt6/Qt6Config.cmake:213 (find_package)"
+      - "CMakeLists.txt:15 (find_package)"
+    checks:
+      - "Performing Test HAVE_STDATOMIC"
+    directories:
+      source: "/home/hallex/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/DrawinG/build-drawing-Qt6-Debug/CMakeFiles/CMakeScratch/TryCompile-v9KlGb"
+      binary: "/home/hallex/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/DrawinG/build-drawing-Qt6-Debug/CMakeFiles/CMakeScratch/TryCompile-v9KlGb"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-DQT_QML_DEBUG"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/app/lib/cmake/Qt6;/app/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/app/lib/cmake/Qt6/3rdparty/kwin;/app/lib/cmake/Qt6;/app/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/app/lib/cmake/Qt6/3rdparty/kwin;/app/lib/cmake/Qt6;/app/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/app/lib/cmake/Qt6/3rdparty/kwin;/app/lib/cmake/Qt6;/app/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/app/lib/cmake/Qt6/3rdparty/kwin"
+    buildResult:
+      variable: "HAVE_STDATOMIC"
+      cached: true
+      stdout: |
+        Change Dir: '/home/hallex/Документы/DrawinG/build-drawing-Qt6-Debug/CMakeFiles/CMakeScratch/TryCompile-v9KlGb'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_0df3e
+        [1/2] /usr/bin/g++ -DHAVE_STDATOMIC  -DQT_QML_DEBUG  -std=gnu++17 -o CMakeFiles/cmTC_0df3e.dir/src.cxx.o -c '/home/hallex/Документы/DrawinG/build-drawing-Qt6-Debug/CMakeFiles/CMakeScratch/TryCompile-v9KlGb/src.cxx'
+        [2/2] : && /usr/bin/g++ -DQT_QML_DEBUG  CMakeFiles/cmTC_0df3e.dir/src.cxx.o -o cmTC_0df3e   && :
+        
+      exitCode: 0
+...

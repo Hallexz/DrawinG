@@ -1,0 +1,9 @@
+/home/hallex/Документы/DrawinG/build-drawing-Qt6-Debug/CMakeFiles/drawing.dir
+/home/hallex/Документы/DrawinG/build-drawing-Qt6-Debug/CMakeFiles/edit_cache.dir
+/home/hallex/Документы/DrawinG/build-drawing-Qt6-Debug/CMakeFiles/rebuild_cache.dir
+/home/hallex/Документы/DrawinG/build-drawing-Qt6-Debug/CMakeFiles/list_install_components.dir
+/home/hallex/Документы/DrawinG/build-drawing-Qt6-Debug/CMakeFiles/install.dir
+/home/hallex/Документы/DrawinG/build-drawing-Qt6-Debug/CMakeFiles/install/local.dir
+/home/hallex/Документы/DrawinG/build-drawing-Qt6-Debug/CMakeFiles/install/strip.dir
+/home/hallex/Документы/DrawinG/build-drawing-Qt6-Debug/CMakeFiles/drawing_autogen_timestamp_deps.dir
+/home/hallex/Документы/DrawinG/build-drawing-Qt6-Debug/CMakeFiles/drawing_autogen.dir
